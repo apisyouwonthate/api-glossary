@@ -14,6 +14,8 @@ When APIs first started getting popular, a lot of companies started flopping the
 
 ## API Description
 
+Alias include: "API definition", "API contract".
+
 An API Description is meta-data about an API, explaining what endpoints, resources, HTTP methods, headers, query parameters, etc. exist. 
 
 Descriptions are written in a particular "API Description Format" (e.g.: OpenAPI, JSON Schema, RAML, WSDL, etc.) and will usually be contained in an "API Description Document" (e.g.: `openapi.yaml`, `schemas/payment.json`) unless the authors decided to use annotations instead.
@@ -52,6 +54,12 @@ This is done to create a single OpenAPI file, which is easier to share, especial
 ## Code Generation
 
 ## Contract Testing
+
+Confirming that an API is accepting and outputting what it says it is can take many forms. Most commonly, when you hear the term Contract Testing in relation to OpenAPI, people are talking about producer contract testing. This means the API development team (or some test/QA team nearby) have implemented a test suite that will [take an API description and compare it to the actual data](https://apisyouwonthate.com/blog/writing-documentation-via-contract-testing/). 
+
+Conceptually contract testing is the same thing as [data validation](#data-validation), but done for different purposes at different parts of the life-cycle. The same tools could be used under the hood.
+
+There is also client-side contract testing, where you write out the contract in a client test suite then make calls to the API to see if it matches.
 
 ## Data Instance
 
