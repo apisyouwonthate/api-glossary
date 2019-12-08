@@ -4,7 +4,7 @@ To avoid confusion in the creation of educational material, tooling, and other c
 
 ## API
 
-Tee general definition "Application Program Interface" can mean a lot of things, with different types of interface. OpenAPI is specifically talking 
+Tee general definition "Application Program Interface" can mean a lot of things, with different types of interface. OpenAPI is specifically talking about HTTP-based APIs, which in general is anything REST, RESTish, and many generic types of RPC. 
 
 ## API-First
 
@@ -16,7 +16,7 @@ When APIs first started getting popular, a lot of companies started flopping the
 
 An API Description is meta-data about an API, explaining what endpoints, resources, HTTP methods, headers, query parameters, etc. exist. 
 
-Descriptions are written in a particular [API Description Format](#API-Description-Format) (e.g.: OpenAPI, JSON Schema, RAML, WSDL, etc) and will usually be contained in [API Description Documents](#API-Description-Document) (e.g.: `openapi.yaml`, [schemas/payment.json`) (unless the authors decided to use annotations instead).
+Descriptions are written in a particular "API Description Format" (e.g.: OpenAPI, JSON Schema, RAML, WSDL, etc.) and will usually be contained in an "API Description Document" (e.g.: `openapi.yaml`, `schemas/payment.json`) unless the authors decided to use annotations instead.
 
 ## API Design
 
@@ -71,9 +71,17 @@ No more $ref’s exist in the file/object representation. If you have 10 operati
 
 ## Mocking
 
+A fake server that takes a description document as input, then routes incoming HTTP requests to example responses or dynamically generates examples. 
+
+_A list of mock servers is available on [OpenAPI.Tools](https://openapi.tools/#mock-servers)._
+
 ## OAS
 
+This is just shorthand for the OpenAPI Specification, which is just [Markdown files on the internet](https://github.com/OAI/OpenAPI-Specification/tree/master/versions) defining how each version of OpenAPI should work.
+
 ## OpenAPI
+
+The new name of the [API Description](#API-Description) Format, which is defined in an [API Specification](#API-Specification). It used to be called [Swagger](#Swagger).
 
 ## Open API
 
