@@ -101,4 +101,8 @@ Looking for the value found at the end of a `$ref`, but no changes are made to t
 
 ## Swagger
 
-## Webhooks
+Historically, "Swagger" was the original name of OpenAPI Specification (OAS). It was called Swagger when it was released in 2011, and when SmartBear aquired Swagger they kept the name for a while, and made a bunch of tools with the name Swagger in it. Swagger Editor, Swagger Inspector, SwaggerHub, etc. 
+
+Once the Swagger specification was given to [Open API Initiative](#Open-API-Initiative) in 2016, the name was changed to OpenAPI. 
+
+Now, the word "Swagger" is just part of the SwaggerHub brand of tooling. The specification is "OpenAPI" (not OpenAPI/Swagger).
