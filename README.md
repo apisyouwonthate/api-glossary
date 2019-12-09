@@ -4,7 +4,7 @@ To avoid confusion in the creation of educational material, tooling, and other c
 
 ## API
 
-Tee general definition "Application Program Interface" can mean a lot of things, with different types of interface. OpenAPI is specifically talking about HTTP-based APIs, which in general is anything REST, RESTish, and many generic types of RPC. 
+The general definition "Application Program Interface" can mean a lot of things, with different types of interface. OpenAPI is specifically talking about HTTP-based APIs, which in general is anything REST, RESTish, and many generic types of RPC. 
 
 ## API-First
 
