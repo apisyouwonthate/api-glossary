@@ -1,6 +1,6 @@
 # OpenAPI Glossary
 
-To avoid confusion in the creation of educational material, tooling, and other content, having a shared vocabulary is important. A lot of people in the OpenAPI community call a lot of things a lot of different things, so let's take a swing at unification here.
+To avoid confusion in the creation of educational material, tooling, and other content, having a shared vocabulary is important. A lot of people in the [OpenAPI](https://www.openapis.org) community call a lot of things a lot of different things, so let's take a swing at unification here.
 
 ## API
 
