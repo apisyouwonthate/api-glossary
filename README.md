@@ -95,6 +95,8 @@ Data Validation leverages in an API Gateway is known as gateway validation, and 
 
 ## Linting
 
+OpenAPI linter like [Spectral](https://stoplight.io/open-source/spectral) can confirm if API descriptions are valid, but also if they match predetermined rules, like a style guide. Style Guides can be defined by API Governance teams at larger companies, or be shared, like the ones on [openapi-contrib/style-guides](https://github.com/openapi-contrib/style-guides).
+
 ## Mocking
 
 A fake server that takes a description document as input, then routes incoming HTTP requests to example responses or dynamically generates examples. 
@@ -113,6 +115,12 @@ The new name of the [API Description](#API-Description) Format, which is defined
 
 The "Open API Initiative" are the group in control of the development of the OpenAPI Specification ([OAS](#OAS)). The name of the group has a space in it. The name of the specification does not. 🤷‍♂️
 
+## Parameters
+
+Parameters is a general catch-all term for headers, path parameters, query string parameters, and in OpenAPI v2 it also included the request body (like form data).
+
+_More about [Parameters](http://spec.openapis.org/oas/v3.0.2#parameter-object) in the OpenAPI v3.0 specification._
+
 ## Reference Documentation
 
 Very similar to the sort of "Classes, Methods, Constants" documentation you're used to seeing for code libraries, modules, packages, explaining the various inputs and outputs. Reference Documentation is a rendering of the API Description in HTML (or maybe a PDF) so slightly less technical people can figure out how to work with the API.
@@ -126,6 +134,12 @@ A JSON Reference, which can be a file, URI, or reference an id. They live inside
 Looking for the value found at the end of a `$ref`, but no changes are made to the file or object being resolved. 
 
 ## Schema
+
+Aliases include "data model".
+
+A schema is metadata, which describes the data type, and other properties about the ata like a specific format, and validation rules. JSON Schema is one example of a schema, but OpenAPI has it's own flavour of JSON Schema which it uses for the various locations a `schema` keyword can exist. 
+
+Schema is most commonly associated with describing the body of a HTTP request or response, but it can also describe various [parameters](#parameters) like headers or path parameters.
 
 ## SDK
 
@@ -141,7 +155,7 @@ More on [Server-side Validation](https://www.apisyouwonthate.com/blog/server-sid
 
 ## Swagger
 
-Historically, "Swagger" was the original name of OpenAPI Specification (OAS). It was called Swagger when it was released in 2011, and when SmartBear aquired Swagger they kept the name for a while, and made a bunch of tools with the name Swagger in it. Swagger Editor, Swagger Inspector, SwaggerHub, etc. 
+Historically, "Swagger" was the original name of OpenAPI Specification (OAS). It was called Swagger when it was released in 2011, and when SmartBear acquired Swagger Specification they kept the name for a while, and made a bunch of tools with the name Swagger in it. Swagger Editor, Swagger Inspector, SwaggerHub, etc. 
 
 Once the Swagger specification was given to [Open API Initiative](#Open-API-Initiative) in 2016, the name was changed to OpenAPI. 
 
