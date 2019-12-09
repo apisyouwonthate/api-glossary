@@ -91,9 +91,15 @@ This is just shorthand for the OpenAPI Specification, which is just [Markdown fi
 
 The new name of the [API Description](#API-Description) Format, which is defined in an [API Specification](#API-Specification). It used to be called [Swagger](#Swagger).
 
+## The OpenAPI Initiative
+
+The [OpenAPI Initiative](https://www.openapis.org) (OAI) are the group in control of the development of the OpenAPI Specification ([OAS](#OAS)).
+
 ## Open API
 
-The "Open API Initiative" are the group in control of the development of the OpenAPI Specification ([OAS](#OAS)). The name of the group has a space in it. The name of the specification does not. 🤷‍♂️
+An open API is a public API.
+
+When referring to the [OpenAPI Specification](#OAS), community or the [OpenAPI Initiative](#The-OpenAPI-Initiative), there is no space in "OpenAPI".
 
 ## Reference Documentation
 
