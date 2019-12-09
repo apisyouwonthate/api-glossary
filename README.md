@@ -18,7 +18,7 @@ Alias include: "API definition", "API contract".
 
 An API Description is meta-data about an API, explaining what endpoints, resources, HTTP methods, headers, query parameters, etc. exist. 
 
-Descriptions are written in a particular "API Description Format" (e.g.: OpenAPI, JSON Schema, RAML, WSDL, etc.) and will usually be contained in an "API Description Document" (e.g.: `openapi.yaml`, `schemas/payment.json`) unless the authors decided to use annotations instead.
+Descriptions are written in a particular "API Description Format" (e.g.: [OpenAPI](http://spec.openapis.org/oas/v3.0.2), [JSON Schema](https://json-schema.org), [RAML](https://raml.org), [WSDL](https://www.w3.org/TR/wsdl/), etc.) and will usually be contained in an "API Description Document" (e.g.: `openapi.yaml`, `schemas/payment.json`) unless the authors decided to use annotations instead.
 
 ## API Design
 
