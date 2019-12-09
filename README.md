@@ -65,13 +65,15 @@ There is also client-side contract testing, where you write out the contract in 
 
 ## Data Validation
 
+Often referred to simple as "validation" when there are many types of validation. Data validation is basically taking some real data (maybe an entire HTTP Message with a body, or just the body) and comparing it to the API description.
+
+This is then used to power things like [contract testing](#contract-testing), [gateway validation](#gateway-validation), and [server-side validation](#server-side-validation).
+
 ## Dereference
 
 Aliases include: "dereferencing", "internal inlining" or "transclusion".
 
-All $refs and replaced with their values a'la copy & paste.
-
-No more $ref’s exist in the file/object representation. If you have 10 operations referencing the same model 10 times, you now have 10 different models.
+All `$ref`s and replaced with their values a'la copy & paste. No more `$ref`'s exist in the file/object representation. If you have 10 operations referencing the same model 10 times, you now have 10 different models.
 
 ## Description Validation
 
@@ -85,9 +87,11 @@ _A list of description validators is available on [OpenAPI.Tools](https://openap
 
 ## Documentation
 
+## Gateway Validation
+
+Data Validation leverages in an API Gateway is known as gateway validation, and it will stop invalid requests from wasting application resources. AWS, Tyk, Express Gateway, etc. support some level of OpenAPI or JSON Schema gateway validation.
+
 ## Links
-
-
 
 ## Linting
 
