@@ -45,9 +45,9 @@ Seeing as there as so many types of API specification floating around, to disamb
 
 Aliases include: "external inlining".
 
-Bundling pulls in external $refs from different files, or URLs, and puts them into the `components` object. 
+Bundling pulls in external `$refs` from different files, or URLs, and puts them into the `components` object. 
 
-This is done to create a single OpenAPI file, which is easier to share, especially with tooling that does not support resolving external files. If tooling does not support $ref at all, then an alternative to bundling is required: [dereferencing](#dereference).
+This is done to create a single OpenAPI file, which is easier to share, especially with tooling that does not support resolving external files. If tooling does not support `$ref` at all, then an alternative to bundling is required: [dereferencing](#dereference).
 
 ## Callbacks
 
