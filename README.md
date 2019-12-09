@@ -73,9 +73,23 @@ All $refs and replaced with their values a'la copy & paste.
 
 No more $ref’s exist in the file/object representation. If you have 10 operations referencing the same model 10 times, you now have 10 different models.
 
+## Description Validation
+
+Aliases include: "schema validation".
+
+A very different type of validation to [data validation](#data-validation). Description validation focuses on making sure the description is correct against the OpenAPI Specification itself.
+
+When a validator moves beyond checking the document is valid, and into custom rules, design opinions, style, etc. the term "linting" is used.
+
+_A list of description validators is available on [OpenAPI.Tools](https://openapi.tools/#description-validation)._
+
 ## Documentation
 
 ## Links
+
+
+
+## Linting
 
 ## Mocking
 
@@ -97,6 +111,8 @@ The "Open API Initiative" are the group in control of the development of the Ope
 
 ## Reference Documentation
 
+Very similar to the sort of "Classes, Methods, Constants" documentation you're used to seeing for code libraries, modules, packages, explaining the various inputs and outputs. Reference Documentation is a rendering of the API Description in HTML (or maybe a PDF) so slightly less technical people can figure out how to work with the API.
+
 ## Reference
 
 A JSON Reference, which can be a file, URI, or reference an id. They live inside the Reference Object, with the key `$ref`.
@@ -105,15 +121,19 @@ A JSON Reference, which can be a file, URI, or reference an id. They live inside
 
 Looking for the value found at the end of a `$ref`, but no changes are made to the file or object being resolved. 
 
-## Runtime Validation
-
 ## Schema
-
-## Schema Validation
 
 ## SDK
 
+"Software Development Kits" are a generic term in computer-land but in the context of Web APIs and OpenAPI in particular, they usually mean some sort of client library for other developers to interact with an API at a programming language level, and not a HTTP library level. 
+
+_A list of of "SDK Generators" on [OpenAPI.Tools](https://openapi.tools/#sdk)._
+
 ## Server-side Validation
+
+Using the concept of [data validation](#data-validation) to 
+
+More on [Server-side Validation](https://www.apisyouwonthate.com/blog/server-side-validation-with-api-descriptions/).
 
 ## Swagger
 
