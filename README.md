@@ -135,7 +135,11 @@ Very similar to the sort of "Classes, Methods, Constants" documentation you're u
 
 ## Reference
 
-A JSON Reference, which can be a file, URI, or reference an id. They live inside the Reference Object, with the key `$ref`.
+A [JSON Reference](https://tools.ietf.org/html/draft-pbryan-zyp-json-ref-03), which can point to a JSON structure in a different location. They may point to objects inside of the current file, but may also refer to other, possibly remote files. They live inside the Reference Object, with the key `$ref`. Here are some examples:
+
+- Reference Object: `{"$ref": "https://example.com/api/openapi.yaml#/components/schemas/Pet"}`
+- JSON Reference: `https://example.com/api/openapi.yaml#/components/schemas/Pet`
+- [JSON Pointer](https://tools.ietf.org/html/rfc6901) (to the location in the referenced file): `/components/schemas/Pet`
 
 ## Resolve
 
