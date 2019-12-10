@@ -87,6 +87,8 @@ _A list of description validators is available on [OpenAPI.Tools](https://openap
 
 ## Documentation
 
+The most common meaning of documentation in OpenAPI-world is [reference documentation](#reference-documentation), but there is a lot more to good API documentation than just that. Guides, tutorials, and other types of how-to content is often combined with reference documentation to provide the best developer experience. This combination along with "sign up for API tokens" type functionality is often referred to as a Developer Portal.
+
 ## Gateway Validation
 
 Data Validation leverages in an API Gateway is known as gateway validation, and it will stop invalid requests from wasting application resources. AWS, Tyk, Express Gateway, etc. support some level of OpenAPI or JSON Schema gateway validation.
