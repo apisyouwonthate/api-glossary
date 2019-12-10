@@ -1,10 +1,10 @@
 # OpenAPI Glossary
 
-To avoid confusion in the creation of educational material, tooling, and other content, having a shared vocabulary is important. A lot of people in the OpenAPI community call a lot of things a lot of different things, so let's take a swing at unification here.
+To avoid confusion in the creation of educational material, tooling, and other content, having a shared vocabulary is important. A lot of people in the [OpenAPI](https://www.openapis.org) community call a lot of things a lot of different things, so let's take a swing at unification here.
 
 ## API
 
-Tee general definition "Application Program Interface" can mean a lot of things, with different types of interface. OpenAPI is specifically talking about HTTP-based APIs, which in general is anything REST, RESTish, and many generic types of RPC. 
+The general definition "Application Program Interface" can mean a lot of things, with different types of interface. OpenAPI is specifically talking about HTTP-based APIs, which in general is anything REST, RESTish, and many generic types of RPC. 
 
 ## API-First
 
@@ -18,7 +18,7 @@ Alias include: "API definition", "API contract".
 
 An API Description is meta-data about an API, explaining what endpoints, resources, HTTP methods, headers, query parameters, etc. exist. 
 
-Descriptions are written in a particular "API Description Format" (e.g.: OpenAPI, JSON Schema, RAML, WSDL, etc.) and will usually be contained in an "API Description Document" (e.g.: `openapi.yaml`, `schemas/payment.json`) unless the authors decided to use annotations instead.
+Descriptions are written in a particular "API Description Format" (e.g.: [OpenAPI](http://spec.openapis.org/oas/v3.0.2), [JSON Schema](https://json-schema.org), [RAML](https://raml.org), [WSDL](https://www.w3.org/TR/wsdl/), etc.) and will usually be contained in an "API Description Document" (e.g.: `openapi.yaml`, `schemas/payment.json`) unless the authors decided to use annotations instead.
 
 ## API Design
 
@@ -45,9 +45,9 @@ Seeing as there as so many types of API specification floating around, to disamb
 
 Aliases include: "external inlining".
 
-Bundling pulls in external $refs from different files, or URLs, and puts them into the `components` object. 
+Bundling pulls in external `$refs` from different files, or URLs, and puts them into the `components` object. 
 
-This is done to create a single OpenAPI file, which is easier to share, especially with tooling that does not support resolving external files. If tooling does not support $ref at all, then an alternative to bundling is required: [dereferencing](#dereference).
+This is done to create a single OpenAPI file, which is easier to share, especially with tooling that does not support resolving external files. If tooling does not support `$ref` at all, then an alternative to bundling is required: [dereferencing](#dereference).
 
 ## Callbacks
 
