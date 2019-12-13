@@ -1,4 +1,4 @@
-# OpenAPI Glossary
+ OpenAPI Glossary
 
 To avoid confusion in the creation of educational material, tooling, and other content, having a shared vocabulary is important. A lot of people in the [OpenAPI](https://www.openapis.org) community call a lot of things a lot of different things, so let's take a swing at unification here.
 
@@ -14,7 +14,7 @@ When APIs first started getting popular, a lot of companies started flopping the
 
 ## API Description
 
-Aliases include: "API Description Document", "API Definition", "API Contract".
+Aliases include: "API Definition" or "API Contract".
 
 An API Description is meta-data about an API, explaining what endpoints, resources, HTTP methods, headers, query parameters, etc. exist.
 
@@ -77,7 +77,7 @@ All `$ref`s and replaced with their values à la copy & paste. No more `$ref`'s 
 
 Aliases include: "Schema Validation".
 
-A very different type of validation to [data validation](#data-validation). Description validation focuses on making sure the [API Description Document](#api-description) is correct against the OpenAPI Specification itself.
+A very different type of validation to [data validation](#data-validation). Description validation focuses on making sure the [description](#api-description) is correct against the OpenAPI Specification itself.
 
 When a validator moves beyond checking the document is valid, and into custom rules, design opinions, style, etc. the term "linting" is used.
 
@@ -105,11 +105,11 @@ _A list of mock servers is available on [OpenAPI.Tools](https://openapi.tools/#m
 
 ## OAS
 
-This is just shorthand for the [OpenAPI Specification[(#openapi)], which is [Markdown files on the internet](https://github.com/OAI/OpenAPI-Specification/tree/master/versions) and [JSON schemas](https://github.com/OAI/OpenAPI-Specification/tree/master/schemas) defining how each version of OpenAPI should work.
+This is just shorthand for the [OpenAPI Specification[(#openapi)], which is [Markdown files on the internet](https://github.com/OAI/OpenAPI-Specification/tree/master/versions) defining how each version of OpenAPI should work.
 
 ## OpenAPI
 
-Aliases include "OpenAPI Specification"
+Aliases include "OpenAPI Specification".
 
 The new name of the [API Description](#api-description) Format, which is defined in an [API Specification](#api-specification). It used to be called [Swagger](#swagger).
 
