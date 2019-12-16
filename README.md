@@ -1,4 +1,4 @@
- OpenAPI Glossary
+# OpenAPI Glossary
 
 To avoid confusion in the creation of educational material, tooling, and other content, having a shared vocabulary is important. A lot of people in the [OpenAPI](https://www.openapis.org) community call a lot of things a lot of different things, so let's take a swing at unification here.
 
@@ -93,6 +93,10 @@ Data Validation leverages in an API Gateway is known as gateway validation, and 
 
 ## Links
 
+Links can mean a lot of things in the concept of computing and APIs, but in OpenAPI there is a [Links Object](http://spec.openapis.org/oas/v3.0.2#parameter-object), which represents a possible design-time link for a response. 
+
+This can be handy for making API documentation a bit less RPC and a bit more REST, by giving hints as to next available actions for any response. It gets a bit more like Hypermedia Controls (a.k.a HATEOAS) if used at runtime, as once a client has a response, the headers, and data instance can be combined with the links to figure out next available actions.
+
 ## Linting
 
 OpenAPI linter like [Spectral](https://stoplight.io/open-source/spectral) can confirm if API descriptions are valid, but also if they match predetermined rules, like a style guide. Style Guides can be defined by API Governance teams at larger companies, or be shared, like the ones on [openapi-contrib/style-guides](https://github.com/openapi-contrib/style-guides).
@@ -105,7 +109,7 @@ _A list of mock servers is available on [OpenAPI.Tools](https://openapi.tools/#m
 
 ## OAS
 
-This is just shorthand for the [OpenAPI Specification[(#openapi)], which is [Markdown files on the internet](https://github.com/OAI/OpenAPI-Specification/tree/master/versions) defining how each version of OpenAPI should work.
+This is just shorthand for the [OpenAPI Specification](#openapi), which is [Markdown files on the internet](https://github.com/OAI/OpenAPI-Specification/tree/master/versions) defining how each version of OpenAPI should work.
 
 ## OpenAPI
 
@@ -157,7 +161,7 @@ Schema is most commonly associated with describing the body of a HTTP request or
 
 "Software Development Kits" are a generic term in computer-land but in the context of Web APIs and OpenAPI in particular, they usually mean some sort of client library for other developers to interact with an API at a programming language level, and not a HTTP library level.
 
-_A list of of "SDK Generators" on [OpenAPI.Tools](https://openapi.tools/#sdk)._
+_A list of SDK generators is available on [OpenAPI.Tools](https://openapi.tools/#sdk)._
 
 ## Server-side Validation
 
