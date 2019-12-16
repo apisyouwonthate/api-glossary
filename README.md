@@ -93,7 +93,7 @@ Data Validation leverages in an API Gateway is known as gateway validation, and 
 
 ## Links
 
-Links can mean a lot of things in the concept of computing and APIs, but in OpenAPI there is a [Links Object](http://spec.openapis.org/oas/v3.0.2#parameter-object), which represents a possible design-time link for a response. 
+Links can mean a lot of things in the concept of computing and APIs, but in OpenAPI there is a [Link Object](http://spec.openapis.org/oas/v3.0.2#link-object), which represents a possible design-time link for a response. 
 
 This can be handy for making API documentation a bit less RPC and a bit more REST, by giving hints as to next available actions for any response. It gets a bit more like Hypermedia Controls (a.k.a HATEOAS) if used at runtime, as once a client has a response, the headers, and data instance can be combined with the links to figure out next available actions.
 
