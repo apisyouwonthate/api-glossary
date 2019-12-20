@@ -63,7 +63,7 @@ There is also client-side contract testing, where you write out the contract in 
 
 ## Converter
 
-A set of tools that allow you to convert the OpenAPI Specification file to another API format such as API Blueprint, HAR, RAML, and others. Certain convereter tools also let you convert your API documentation from RAML for example to the OpenAPI format. 
+A set of tools that allow you to convert OpenAPI descriptions to another description format, such as API Blueprint, HAR, RAML, etc., or vice versa! Some will also convert to HTML which is usually for making [reference documentation](#reference-documentation).
 
 ## Data Instance
 
