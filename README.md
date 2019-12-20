@@ -59,6 +59,10 @@ Conceptually contract testing is the same thing as [data validation](#data-valid
 
 There is also client-side contract testing, where you write out the contract in a client test suite then make calls to the API to see if it matches.
 
+## Converter
+
+A set of tools that allow you to convert OpenAPI descriptions to another description format, such as API Blueprint, HAR, RAML, etc., or vice versa! Some will also convert to HTML which is usually for making [reference documentation](#reference-documentation).
+
 ## Data Instance
 
 ## Data Validation
