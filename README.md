@@ -53,6 +53,19 @@ Most programming languages have a concept of a callback which is a function pass
 
 This is usually performed via a Webhook, so the term Webhook would be more common than Callabck, but OpenAPI specifically talks about Callbacks.
 
+For example, your API provides a `POST /subscribe` operation that expects a callback URL in the request body:
+
+```
+POST /subscribe
+Host: my.example.com
+Content-Type: application/json
+{
+  "callbackUrl": "https://myserver.com/send/callback/here"
+}
+```
+
+A Webhook will then be sent to that URL.
+
 _More about OpenAPI callbacks on [Swagger Docs: Callbacks](https://swagger.io/docs/specification/callbacks/)._
 
 ## Code Generation
