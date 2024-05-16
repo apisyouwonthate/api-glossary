@@ -49,6 +49,12 @@ This is done to create a single OpenAPI file, which is easier to share, especial
 
 ## Callbacks
 
+Most programming languages have a concept of a callback which is a function passed as an argument to another function, which is run after another function has finished. The exact same concept exists in APIs, where a URL can be passed to be alerted when an action is complete. 
+
+This is usually performed via a Webhook, so the term Webhook would be more common than Callabck, but OpenAPI specifically talks about Callbacks.
+
+_More about OpenAPI callbacks on [Swagger Docs: Callbacks](https://swagger.io/docs/specification/callbacks/)._
+
 ## Code Generation
 
 ## Contract Testing
